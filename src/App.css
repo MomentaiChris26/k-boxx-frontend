@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.content{
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(105,22,167,1) 0%, rgba(72,18,149,1) 46%, rgba(54,16,139,1) 78%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(105,22,167,1) 0%, rgba(72,18,149,1) 46%, rgba(54,16,139,1) 78%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(105,22,167,1) 0%, rgba(72,18,149,1) 46%, rgba(54,16,139,1) 78%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#36108b",GradientType=1);
+  font-family: 'Mina', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand{
+  color:white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover{
+  text-decoration: none;
+  color:grey;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content {
+  flex: 1 0 auto;
 }
-
-.App-link {
-  color: #61dafb;
+.adminList{
+  text-align:center;
+  font-size:30px;
+  color:#BBA6F8;
+  top:0;
+  margin-top:10%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.adminList a{
+  color:#BBA6F8;
+}
+.adminlink{
+  font-size:20px;
+  color:white;
+}
+ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+.adminList li{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.adminList a:hover{
+  color:white;
+}
+.formWrapper{
+  max-width:960px;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:20px;
+}
+.tableList{
+  background-color:white;
+}
+.tableWrapper{
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:20px;
+}
+.playlistWrapper{
+  padding: 0px 0px 100px 100px;
+  grid-column-start:0;
+  grid-column-end:1;
+}
+.songCard{
+  border-color:black;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.toggleStyle{
+  background-color:black;
+  color:white;
+  font-family: 'Mina', sans-serif;
+  display:flex;
+  justify-content: space-between;
+  border-color:black;
+  
+}
+.accordionBody{
+  background-color:lightgrey;
+  font-family: 'Mina', sans-serif;
+  display:flex;
+  justify-content: space-between;
+}
+.landingGrid{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.videoWrapper{
+  grid-column-start:2;
+  grid-column-end:3;
+  text-align: right;
+  padding-right:50px;
+  padding-left:50px;
+}
+.currentSongBox{
+  color:white;
+  background-color:rgb(0, 0, 0,0.5);
+  border: 2px solid black;
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-bottom:20px;
+}
+.currentSongBox > ul > li > i{
+  font-size:20px;
+  padding-top:10px;
+  color:pink;
+}
+.titleSong{
+padding-top:20px;
+padding-bottom:20px;
+font-size:30px;
+}
+.artistName{
+  font-size:20px;
 }

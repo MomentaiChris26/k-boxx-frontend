@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Header from './components/layout/header';
+import Landing from './components/pages/Landing';
+import Admin from './components/pages/Admin';
+import AddSong from './components/forms/AddSong';
+import ListSongsAdmin from './components/pages/ListSongsAdmin';
+import EditSong from './components/forms/EditSong'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router> 
+    <div className="content">
+     <Header/>
+     <Switch>
+       <Route path="/" exact component={Landing}/>
+       <Route path="/admin" exact component={Admin}/>
+       <Route path="/addSong" exact component={AddSong}/>
+       <Route path="/listSongs" exact component={ListSongsAdmin}/>
+       <Route path="/editSong" exact component={EditSong}/>
+     </Switch>
     </div>
+    </Router>
   );
 }
 
