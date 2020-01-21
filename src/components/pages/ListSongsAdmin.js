@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
     return (
         <div className="tableWrapper"> 
         <Link to="admin"><span style={{ color:'white'}}>Back to Admin</span></Link>
-        <Form style={{padding:'10px 0px 10px 0px'}}>
+        <Form style={{padding:'10px 10px 10px 10px'}}>
         <Form.Control type="search" placeholder="Search" />
         </Form>
             <Table striped bordered hover className="tableList">

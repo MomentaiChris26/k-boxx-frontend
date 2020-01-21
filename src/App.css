@@ -55,6 +55,7 @@ ul{
   margin-right:auto;
   margin-left:auto;
   margin-top:20px;
+  padding:10px 10px;
 }
 .playlistWrapper{
   padding: 0px 0px 100px 100px;
@@ -65,6 +66,7 @@ ul{
   border-color:black;
   margin-top:10px;
   margin-bottom:10px;
+  cursor: pointer;
 }
 .toggleStyle{
   background-color:black;
@@ -80,6 +82,27 @@ ul{
   font-family: 'Mina', sans-serif;
   display:flex;
   justify-content: space-between;
+}
+.prioritizeBtn{
+  font-weight:bold;
+  color:black;
+  cursor: pointer;
+  padding:5px 10px;
+  border-radius:5px
+}
+.deleteBtn{
+  font-weight:bold;
+  color:red;
+  cursor: pointer;
+  padding:5px 10px;
+  border-radius:5px
+}
+.prioritizeBtn:hover{
+  background-color:rgb(145, 145, 145);
+}
+.deleteBtn:hover{
+  background-color:rgb(238, 150, 150);
+
 }
 .landingGrid{
   display:grid;
@@ -113,4 +136,29 @@ font-size:30px;
 }
 .artistName{
   font-size:20px;
+}
+.resultsBox{
+  background-color:white;
+  font-weight:bold;
+  text-align:left;
+}
+.confirmBox{
+  color:rgb(158, 36, 56);
+  text-align:center;
+  margin-top:5px;
+  margin-bottom:5px;
+  background-color: pink;
+  width:50%;
+  margin-right:auto;
+  margin-left:auto;
+  font-weight:bold;
+}
+.searchResult:hover{
+  cursor: pointer;
+  background-color:grey
+}
+.skipbtn{
+  color:white;
+  font-size:25px;
+  cursor: pointer;
 }

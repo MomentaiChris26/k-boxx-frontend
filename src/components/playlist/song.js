@@ -11,8 +11,8 @@ import {Accordion,Card} from 'react-bootstrap'
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
             <Card.Body className="accordionBody">
-                <span style={{fontWeight:'bold'}}>Prioritize</span>
-                <span style={{color:'red'}}>Delete</span>
+                <span className="prioritizeBtn">Prioritize</span>
+                <span className="deleteBtn">Delete</span>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -23,8 +23,8 @@ import {Accordion,Card} from 'react-bootstrap'
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="1">
           <Card.Body className="accordionBody">
-                <span style={{fontWeight:'bold'}}>Prioritize</span>
-                <span style={{color:'red'}}>Delete</span>
+                <span className="prioritizeBtn">Prioritize</span>
+                <span className="deleteBtn">Delete</span>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -35,8 +35,8 @@ import {Accordion,Card} from 'react-bootstrap'
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="2">
           <Card.Body className="accordionBody">
-                <span style={{fontWeight:'bold'}}>Prioritize</span>
-                <span style={{color:'red'}}>Delete</span>
+                <span className="prioritizeBtn">Prioritize</span>
+                <span className="deleteBtn">Delete</span>
             </Card.Body>
           </Accordion.Collapse>
         </Card>

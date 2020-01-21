@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Playlist from '../playlist/List';
 import Video from '../theatre/video';
-import CurrentSong from '.././theatre/currentSong'
+import CurrentSong from '.././theatre/currentSong';
+import SkipBtn from '../theatre/skipBtn';
+import Search from '../search/Search'
 
 class Landing extends Component {
     render() {
@@ -11,6 +13,8 @@ class Landing extends Component {
                 <div className="videoWrapper">
                 <CurrentSong/>
                 <Video/> 
+                <SkipBtn/>
+                <Search/>
                 </div>
             </div>
         )
